@@ -1,0 +1,27 @@
+From 4dae609c35a6cf5b4dd617482034a312c5d3167d Mon Sep 17 00:00:00 2001
+From: PugzAreCute <me@pugzarecute.com>
+Date: Sat, 16 Dec 2023 19:14:06 +0530
+Subject: [PATCH] Use specific FM HAL
+
+Adapted from https://github.com/PixelExperience/vendor_aosp/commit/6a23cfd3ad4ac795eb4fe0559dc6ac2b5b6ce505
+---
+ BoardConfigQcom.mk | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/BoardConfigQcom.mk b/BoardConfigQcom.mk
+index 23c0934..99b8a3e 100644
+--- a/BoardConfigQcom.mk
++++ b/BoardConfigQcom.mk
+@@ -213,3 +213,8 @@ endif
+ ifneq ($(USE_DEVICE_SPECIFIC_DATASERVICES),true)
+     PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/dataservices
+ endif
++
++# Add fm-commonsys to PRODUCT_SOONG_NAMESPACES if needed
++ifneq ($(USE_DEVICE_SPECIFIC_FM),true)
++    PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/fm-commonsys
++endif
+\ No newline at end of file
+-- 
+2.43.0
+

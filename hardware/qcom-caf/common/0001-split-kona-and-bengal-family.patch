@@ -1,0 +1,113 @@
+From 99e14a1d0f75371f2b7d690a6788e5d3765f8fa3 Mon Sep 17 00:00:00 2001
+From: PugzAreCute <me@pugzarecute.com>
+Date: Sat, 16 Dec 2023 18:24:13 +0530
+Subject: [PATCH] split kona and bengal family
+
+---
+ BoardConfigQcom.mk         | 22 ++++++++++++++--------
+ os_pickup_sepolicy_vndr.mk |  2 +-
+ qcom_defs.mk               |  3 ++-
+ 3 files changed, 17 insertions(+), 10 deletions(-)
+
+diff --git a/BoardConfigQcom.mk b/BoardConfigQcom.mk
+index aa4981f..23c0934 100644
+--- a/BoardConfigQcom.mk
++++ b/BoardConfigQcom.mk
+@@ -17,7 +17,8 @@ UM_PLATFORMS := \
+     $(UM_4_4_FAMILY) \
+     $(UM_4_9_FAMILY) \
+     $(UM_4_14_FAMILY) \
+-    $(UM_4_19_FAMILY) \
++    $(UM_4_19_KONA_FAMILY) \
++    $(UM_4_19_BENGAL_FAMILY) \
+     $(UM_5_4_FAMILY) \
+     $(UM_5_10_FAMILY) \
+     $(UM_5_15_FAMILY)
+@@ -27,7 +28,8 @@ LEGACY_UM_PLATFORMS := \
+     $(UM_4_4_FAMILY) \
+     $(UM_4_9_FAMILY) \
+     $(UM_4_14_FAMILY) \
+-    $(UM_4_19_FAMILY) \
++    $(UM_4_19_KONA_FAMILY) \
++    $(UM_4_19_BENGAL_FAMILY) \
+     $(UM_5_4_FAMILY)
+ 
+ QSSI_SUPPORTED_PLATFORMS := \
+@@ -35,7 +37,8 @@ QSSI_SUPPORTED_PLATFORMS := \
+     $(UM_4_19_LEGACY_FAMILY) \
+     $(UM_4_9_FAMILY) \
+     $(UM_4_14_FAMILY) \
+-    $(UM_4_19_FAMILY) \
++    $(UM_4_19_KONA_FAMILY) \
++    $(UM_4_19_BENGAL_FAMILY) \
+     $(UM_5_4_FAMILY) \
+     $(UM_5_10_FAMILY) \
+     $(UM_5_15_FAMILY)
+@@ -96,7 +99,7 @@ TARGET_USES_QCOM_MM_AUDIO := true
+ TARGET_USES_COLOR_METADATA := true
+ 
+ # Enable DRM PP driver on UM platforms that support it
+-ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
++ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_KONA_FAMILY) $(UM_4_19_BENGAL_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+     SOONG_CONFIG_qtidisplay_drmpp := true
+     TARGET_USES_DRM_PP := true
+ endif
+@@ -125,12 +128,12 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 13)
+ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 21)
+ 
+ # Mark GRALLOC_USAGE_PRIVATE_HEIF_VIDEO as valid gralloc bit on UM platforms that support it
+-ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
++ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_KONA_FAMILY) $(UM_4_19_BENGAL_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY) $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+     TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 27)
+ endif
+ 
+ # List of targets that use master side content protection
+-MASTER_SIDE_CP_TARGET_LIST := msm8996 $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY)
++MASTER_SIDE_CP_TARGET_LIST := msm8996 $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_KONA_FAMILY) $(UM_4_19_BENGAL_FAMILY)
+ 
+ # Opt-in for old rmnet_data driver
+ ifeq ($(filter $(UM_5_15_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+@@ -161,9 +164,12 @@ else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ else ifneq ($(filter $(UM_4_14_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+     MSM_VIDC_TARGET_LIST := $(UM_4_14_FAMILY)
+     QCOM_HARDWARE_VARIANT := sm8150
+-else ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+-    MSM_VIDC_TARGET_LIST := $(UM_4_19_FAMILY)
++else ifneq ($(filter $(UM_4_19_KONA_FAMILY),$(TARGET_BOARD_PLATFORM)),)
++    MSM_VIDC_TARGET_LIST := $(UM_4_19_KONA_FAMILY)
+     QCOM_HARDWARE_VARIANT := sm8250
++else ifneq ($(filter $(UM_4_19_BENGAL_FAMILY),$(TARGET_BOARD_PLATFORM)),)
++    MSM_VIDC_TARGET_LIST := $(UM_4_19_BENGAL_FAMILY)
++    QCOM_HARDWARE_VARIANT := bengal
+ else ifneq ($(filter $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+     QCOM_HARDWARE_VARIANT := sm8350
+ else ifneq ($(filter $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+diff --git a/os_pickup_sepolicy_vndr.mk b/os_pickup_sepolicy_vndr.mk
+index 3d9c465..2de1194 100644
+--- a/os_pickup_sepolicy_vndr.mk
++++ b/os_pickup_sepolicy_vndr.mk
+@@ -1,6 +1,6 @@
+ include hardware/qcom-caf/common/qcom_defs.mk
+ 
+-ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
++ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_KONA_FAMILY) $(UM_4_19_BENGAL_FAMILY) $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+     include device/qcom/sepolicy_vndr/legacy-um/SEPolicy.mk
+ else ifneq ($(filter $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+     include device/qcom/sepolicy_vndr/sm8450/SEPolicy.mk
+diff --git a/qcom_defs.mk b/qcom_defs.mk
+index 3df2ac4..7dcacea 100644
+--- a/qcom_defs.mk
++++ b/qcom_defs.mk
+@@ -7,7 +7,8 @@ UM_3_18_FAMILY := msm8996 msm8937 msm8953
+ UM_4_4_FAMILY := msm8998 sdm660
+ UM_4_9_FAMILY := sdm845 sdm710
+ UM_4_14_FAMILY := msmnile $(MSMSTEPPE) $(TRINKET) atoll
+-UM_4_19_FAMILY := kona lito bengal
++UM_4_19_KONA_FAMILY := kona lito
++UM_4_19_BENGAL_FAMILY := bengal
+ UM_5_4_FAMILY := lahaina holi
+ UM_5_10_FAMILY := taro parrot
+ UM_5_15_FAMILY := kalama
+-- 
+2.43.0
+
