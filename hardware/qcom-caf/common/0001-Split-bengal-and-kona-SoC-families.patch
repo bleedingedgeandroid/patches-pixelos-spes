@@ -1,7 +1,7 @@
-From 99e14a1d0f75371f2b7d690a6788e5d3765f8fa3 Mon Sep 17 00:00:00 2001
+From 18c03849b36652954727d8f00d4ae3ba93ffbe4f Mon Sep 17 00:00:00 2001
 From: PugzAreCute <me@pugzarecute.com>
-Date: Sat, 16 Dec 2023 18:24:13 +0530
-Subject: [PATCH] split kona and bengal family
+Date: Tue, 16 Jan 2024 18:39:40 +0530
+Subject: [PATCH] Split bengal and kona  SoC families
 
 ---
  BoardConfigQcom.mk         | 22 ++++++++++++++--------
@@ -10,7 +10,7 @@ Subject: [PATCH] split kona and bengal family
  3 files changed, 17 insertions(+), 10 deletions(-)
 
 diff --git a/BoardConfigQcom.mk b/BoardConfigQcom.mk
-index aa4981f..23c0934 100644
+index c4b9158..07f6d77 100644
 --- a/BoardConfigQcom.mk
 +++ b/BoardConfigQcom.mk
 @@ -17,7 +17,8 @@ UM_PLATFORMS := \
