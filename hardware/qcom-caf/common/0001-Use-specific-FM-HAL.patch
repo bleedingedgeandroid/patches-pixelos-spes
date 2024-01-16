@@ -1,6 +1,6 @@
-From 4dae609c35a6cf5b4dd617482034a312c5d3167d Mon Sep 17 00:00:00 2001
+From ffd6dfd331e62c9f20aada780f3ca2c2ed267397 Mon Sep 17 00:00:00 2001
 From: PugzAreCute <me@pugzarecute.com>
-Date: Sat, 16 Dec 2023 19:14:06 +0530
+Date: Tue, 16 Jan 2024 18:54:00 +0530
 Subject: [PATCH] Use specific FM HAL
 
 Adapted from https://github.com/PixelExperience/vendor_aosp/commit/6a23cfd3ad4ac795eb4fe0559dc6ac2b5b6ce505
@@ -9,13 +9,13 @@ Adapted from https://github.com/PixelExperience/vendor_aosp/commit/6a23cfd3ad4ac
  1 file changed, 5 insertions(+)
 
 diff --git a/BoardConfigQcom.mk b/BoardConfigQcom.mk
-index 23c0934..99b8a3e 100644
+index 07f6d77..272c63c 100644
 --- a/BoardConfigQcom.mk
 +++ b/BoardConfigQcom.mk
-@@ -213,3 +213,8 @@ endif
- ifneq ($(USE_DEVICE_SPECIFIC_DATASERVICES),true)
-     PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/dataservices
- endif
+@@ -216,3 +216,8 @@ endif
+ 
+ # Add wlan to PRODUCT_SOONG_NAMESPACES
+ PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/wlan
 +
 +# Add fm-commonsys to PRODUCT_SOONG_NAMESPACES if needed
 +ifneq ($(USE_DEVICE_SPECIFIC_FM),true)
