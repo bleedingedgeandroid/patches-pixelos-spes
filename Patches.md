@@ -20,6 +20,7 @@ git clone https://github.com/PixelExperience-Staging/hardware_qcom-caf_bengal_gp
 git clone https://github.com/PixelExperience-Staging/hardware_qcom-caf_bengal_media.git hardware/qcom-caf/bengal/media -b fourteen
 git clone https://github.com/bleedingedgeandroid/device_xiaomi_sm6225-common.git device/xiaomi/sm6225-common -b fourteen-pixelos
 git clone https://github.com/muralivijay/kernel_xiaomi_sm6225.git kernel/xiaomi/sm6225  -b android-14
+git clone https://github.com/bleedingedgeandroid/device_xiaomi_spes-chris.git device/xiaomi/spes-chris -b fourteen-pixelos
 git clone https://github.com/bleedingedgeandroid/vendor_xiaomi_spes.git vendor/xiaomi/spes  -b fourteen-pixelos
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_xiaomi_sm6225-common.git vendor/xiaomi/sm6225-common  -b fourteen
 git clone https://github.com/PixelOS-AOSP/hardware_xiaomi hardware/xiaomi -b fourteen
