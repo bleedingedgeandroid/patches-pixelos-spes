@@ -19,7 +19,7 @@ index 07f6d77..272c63c 100644
 +
 +# Add fm-commonsys to PRODUCT_SOONG_NAMESPACES if needed
 +ifneq ($(USE_DEVICE_SPECIFIC_FM),true)
-+    PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/fm-commonsys
++    PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys/fm
 +endif
 \ No newline at end of file
 -- 
