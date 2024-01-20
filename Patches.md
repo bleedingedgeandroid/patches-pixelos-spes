@@ -39,6 +39,9 @@ cp hardware/qcom-caf/common/os_pickup_qssi.bp hardware/qcom-caf/bengal/Android.b
 cd hardware/qcom-caf/common
 # Split bengal and kona SOC families
 curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/hardware/qcom-caf/common/0001-Split-bengal-and-kona-SoC-families.patch -s | git am
+
+# Use specific FM
+curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/hardware/qcom-caf/common/0001-Use-specific-FM-HAL.patch -s | git am
 cd ../../..
 
 cd vendor/qcom/opensource/interfaces
