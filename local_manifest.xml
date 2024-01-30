@@ -3,7 +3,7 @@
     <remote name="pe-lab" fetch="https://gitlab.pixelexperience.org/" ></remote>
 
         <remove-project name="LineageOS/android_external_wpa_supplicant_8"/>
-    <remove-project name="android_vendor_qcom_opensource_usb"/>                <remove-project name=" platform/hardware/st/nfc"/>
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_usb"/>                <remove-project name="platform/hardware/st/nfc"/>
 
     <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_common.git" path="device/qcom/common" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_common-sepolicy.git" path="device/qcom/common-sepolicy" />
