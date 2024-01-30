@@ -1,0 +1,32 @@
+<manifest>
+  <remote name="hub" fetch="https://github.com/" ></remote>
+    <remote name="pe-lab" fetch="https://gitlab.pixelexperience.org/" ></remote>
+
+        <remove-project name="platform/external/wpa_supplicant_8"/>
+    <remove-project name="android_vendor_qcom_opensource_usb"/>                <remove-project name=" platform/hardware/st/nfc"/>
+
+    <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_common.git path="device/qcom/common" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_common-sepolicy.git path="device/qcom/common-sepolicy" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_qssi.git path="device/qcom/qssi" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_vendor-common.git path="device/qcom/vendor-common" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_wlan.git path="device/qcom/wlan" />
+    <project revision="fourteen-pixelos" remote="pe-lab" name="android/vendor-blobs/vendor_qcom_common.git" path="vendor/qcom/common" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_commonsys-intf_bluetooth.git path="vendor/qcom/opensource/commonsys-intf/bluetooth" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_core-utils.git path="vendor/qcom/opensource/core-utils" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_commonsys_dpm.git path="vendor/qcom/opensource/commonsys/dpm" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_audio.git path="hardware/qcom-caf/bengal/audio" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_display.git path="hardware/qcom-caf/bengal/display" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_gps.git path="hardware/qcom-caf/bengal/gps" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_media.git path="hardware/qcom-caf/bengal/media" />
+    <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sm6225-common.git path="device/xiaomi/sm6225-common" />
+    <project revision="fourteen" remote="hub" name="muralivijay/kernel_xiaomi_sm6225.git path="kernel/xiaomi/sm6225  -b android-14
+    <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_spes-chris.git path="device/xiaomi/spes" />
+    <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_spes.git path="vendor/xiaomi/spes" />
+    <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_sm6225-common.git path="vendor/xiaomi/sm6225-common" />
+    <project revision="fourteen" remote="hub" name="PixelOS-AOSP/hardware_xiaomi hardware/xiaomi" />
+    <project revision="uvite" remote="hub" name="TheMatheusDev/external_wpa_supplicant_8" path="external/wpa_supplicant_8" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_st_nfc hardware/st/nfc" />
+    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_usb vendor/qcom/opensource/usb" />
+    <project revision="fourteen" remote="hub" name="bleedingedgeandroid/device_xiaomi_sepolicy device/xiaomi/sepolicy -b  fourteen-pixelos
+
+</manifest>
