@@ -19,7 +19,7 @@
     <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_gps.git path="hardware/qcom-caf/bengal/gps" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_media.git path="hardware/qcom-caf/bengal/media" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sm6225-common.git path="device/xiaomi/sm6225-common" />
-    <project revision="fourteen" remote="hub" name="muralivijay/kernel_xiaomi_sm6225.git path="kernel/xiaomi/sm6225  -b android-14
+    <project revision="android-14" remote="hub" name="muralivijay/kernel_xiaomi_sm6225.git path="kernel/xiaomi/sm6225" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_spes-chris.git path="device/xiaomi/spes" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_spes.git path="vendor/xiaomi/spes" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_sm6225-common.git path="vendor/xiaomi/sm6225-common" />
@@ -27,6 +27,6 @@
     <project revision="uvite" remote="hub" name="TheMatheusDev/external_wpa_supplicant_8" path="external/wpa_supplicant_8" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_st_nfc hardware/st/nfc" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_usb vendor/qcom/opensource/usb" />
-    <project revision="fourteen" remote="hub" name="bleedingedgeandroid/device_xiaomi_sepolicy device/xiaomi/sepolicy -b  fourteen-pixelos
+    <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" />
 
 </manifest>
