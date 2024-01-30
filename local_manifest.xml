@@ -10,7 +10,7 @@
     <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_qssi.git" path="device/qcom/qssi" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_vendor-common.git" path="device/qcom/vendor-common" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_wlan.git" path="device/qcom/wlan" />
-    <project revision="fourteen-pixelos" remote="pe-lab" name="android/vendor-blobs/vendor_qcom_common.git" path="vendor/qcom/common" />
+    <project revision="fourteen" remote="pe-lab" name="android/vendor-blobs/vendor_qcom_common.git" path="vendor/qcom/common" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_commonsys-intf_bluetooth.git" path="vendor/qcom/opensource/commonsys-intf/bluetooth" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_core-utils.git" path="vendor/qcom/opensource/core-utils" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_commonsys_dpm.git" path="vendor/qcom/opensource/commonsys/dpm" />
