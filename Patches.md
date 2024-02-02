@@ -50,7 +50,6 @@ rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/An
 
 # These patches are only needed when building unofficial. This requires you to add a valid pif fingerprint in overlay/rro_overlay/CertifiedPropsOverlay
 cd vendor/aosp
-git revert aa62a23b3d0dc06deb8ea332d0f3107e9261e970
 git revert cba30d055a5dffdf57217c5f59ada565a78edd18
 cd ../..
 ```
