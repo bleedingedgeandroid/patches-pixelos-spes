@@ -12,13 +12,13 @@
     <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_vendor-common.git" path="device/qcom/vendor-common" />
     <project revision="fourteen" remote="hub" name="PixelExperience-Devices/device_qcom_wlan.git" path="device/qcom/wlan" />
     <project revision="fourteen" remote="pe-lab" name="android/vendor-blobs/vendor_qcom_common.git" path="vendor/qcom/common" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_commonsys-intf_bluetooth.git" path="vendor/qcom/opensource/commonsys-intf/bluetooth" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_core-utils.git" path="vendor/qcom/opensource/core-utils" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_commonsys_dpm.git" path="vendor/qcom/opensource/commonsys/dpm" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_audio.git" path="hardware/qcom-caf/bengal/audio" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_display.git" path="hardware/qcom-caf/bengal/display" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_gps.git" path="hardware/qcom-caf/bengal/gps" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_media.git" path="hardware/qcom-caf/bengal/media" />
+    <project revision="uvite" remote="hub" name="AOSPA/android_vendor_qcom-opensource_bluetooth-commonsys-intf.git" path="vendor/qcom/opensource/commonsys-intf/bluetooth" />
+    <project revision="uvite" remote="hub" name="AOSPA/android_vendor_qcom-opensource_core-utils.git" path="vendor/qcom/opensource/core-utils" />
+    <project revision="thirteen" remote="hub" name="PixelExperience/vendor_qcom_opensource_commonsys_dpm.git" path="vendor/qcom/opensource/commonsys/dpm" />
+    <project revision="uvite-bengal" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_audio.git" path="hardware/qcom-caf/bengal/audio" />
+    <project revision="uvite-865" remote="hub" name="AOSPA/android_hardware_qcom_display.git" path="hardware/qcom-caf/bengal/display" />
+    <project revision="uvite-legacy-component" remote="hub" name="AOSPA/android_hardware_qcom_gps.git" path="hardware/qcom-caf/bengal/gps" />
+    <project revision="uvite-865" remote="hub" name="AOSPA/android_hardware_qcom_media.git" path="hardware/qcom-caf/bengal/media" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sm6225-common.git" path="device/xiaomi/sm6225-common" />
     <project revision="android-14" remote="hub" name="muralivijay/kernel_xiaomi_sm6225.git" path="kernel/xiaomi/sm6225" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_spes-chris.git" path="device/xiaomi/spes" />
