@@ -15,7 +15,7 @@
     <project revision="uvite" remote="hub" name="AOSPA/android_vendor_qcom-opensource_bluetooth-commonsys-intf.git" path="vendor/qcom/opensource/commonsys-intf/bluetooth" />
     <project revision="uvite" remote="hub" name="AOSPA/android_vendor_qcom-opensource_core-utils.git" path="vendor/qcom/opensource/core-utils" />
     <project revision="thirteen" remote="hub" name="PixelExperience/vendor_qcom_opensource_commonsys_dpm.git" path="vendor/qcom/opensource/commonsys/dpm" />
-    <project revision="uvite-bengal" remote="hub" name="PixelExperience-Staging/hardware_qcom-caf_bengal_audio.git" path="hardware/qcom-caf/bengal/audio" />
+    <project revision="uvite-bengal" remote="hub" name="AOSPA/android_hardware_qcom_audio.git" path="hardware/qcom-caf/bengal/audio" />
     <project revision="uvite-865" remote="hub" name="AOSPA/android_hardware_qcom_display.git" path="hardware/qcom-caf/bengal/display" />
     <project revision="uvite-legacy-component" remote="hub" name="AOSPA/android_hardware_qcom_gps.git" path="hardware/qcom-caf/bengal/gps" />
     <project revision="uvite-865" remote="hub" name="AOSPA/android_hardware_qcom_media.git" path="hardware/qcom-caf/bengal/media" />
