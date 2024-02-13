@@ -26,8 +26,8 @@
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_sm6225-common.git" path="vendor/xiaomi/sm6225-common" />
     <project revision="fourteen" remote="hub" name="PixelOS-AOSP/hardware_xiaomi" path="hardware/xiaomi" />
     <project revision="uvite" remote="hub" name="TheMatheusDev/external_wpa_supplicant_8" path="external/wpa_supplicant_8" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/hardware_st_nfc" path="hardware/st/nfc" />
-    <project revision="fourteen" remote="hub" name="PixelExperience-Staging/vendor_qcom_opensource_usb" path="vendor/qcom/opensource/usb" />
+    <project revision="uvite" remote="hub" name="AOSPA/android_hardware_st_nfc" path="hardware/st/nfc" />
+    <project revision="uvite" remote="hub" name="AOSPA/android_vendor_qcom-opensource_usb" path="vendor/qcom/opensource/usb" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" />
 
 </manifest>
