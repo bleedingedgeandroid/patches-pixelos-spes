@@ -49,7 +49,7 @@ cd hardware/qcom-caf/bengal/media
 curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/hardware/qcom-caf/bengal/media/0001-spes-adapt-paths-for-non-AOSPA-roms.patch | git am
 cd ../../../..
 
-rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
+rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp  vendor/qcom/opensource/core-utils/fwk-detect/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
 
 # These patches are only needed when building unofficial. This requires you to add a valid pif fingerprint in overlay/rro_overlay/CertifiedPropsOverlay
 cd vendor/aosp
