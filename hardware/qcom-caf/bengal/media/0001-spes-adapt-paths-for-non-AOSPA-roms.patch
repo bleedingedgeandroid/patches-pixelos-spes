@@ -1,0 +1,25 @@
+From 5aaf6a0b1a3b6cb3523e838f0c8ac4965299aa16 Mon Sep 17 00:00:00 2001
+From: PugzAreCute <me@pugzarecute.com>
+Date: Wed, 14 Feb 2024 17:35:14 +0530
+Subject: [PATCH] spes: adapt paths for non-AOSPA roms
+
+---
+ product.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/product.mk b/product.mk
+index c91579fb..24b6ddcd 100644
+--- a/product.mk
++++ b/product.mk
+@@ -23,7 +23,7 @@ MM_VIDEO += init.qti.media.sh
+ 
+ PRODUCT_PACKAGES += $(MM_VIDEO)
+ 
+-include hardware/qcom/media/conf_files/$(TARGET_BOARD_PLATFORM)/$(TARGET_BOARD_PLATFORM).mk
++include hardware/qcom-caf/bengal/media/conf_files/$(TARGET_BOARD_PLATFORM)/$(TARGET_BOARD_PLATFORM).mk
+ 
+ endif
+ 
+-- 
+2.43.0
+
