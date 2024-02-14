@@ -29,5 +29,5 @@
     <project revision="uvite" remote="hub" name="AOSPA/android_hardware_st_nfc" path="hardware/st/nfc" />
     <project revision="uvite" remote="hub" name="AOSPA/android_vendor_qcom-opensource_usb" path="vendor/qcom/opensource/usb" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" />
-
+    <project revision="uvite" remote="lab" name="ThankYouMario/android_vendor_xiaomi_sm6225-commmon-miuicamera.git" path="vendor/xiaomi/camera" />
 </manifest>
