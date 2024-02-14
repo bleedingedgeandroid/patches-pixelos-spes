@@ -46,7 +46,7 @@ cd vendor/qcom/opensource/interfaces
 curl -s https://github.com/PixelExperience/vendor_qcom_opensource_interfaces/commit/0a1e8499b11c9c80a58510faa7f63e2d85ab831d.patch | git am
 cd ../../../..
 cd hardware/qcom-caf/bengal/media
-curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/hardware/qcom-caf/bengal/media/0001-spes-adapt-paths-for-non-AOSPA-roms.patch | git am
+curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/hardware/qcom-caf/bengal/media/0001-spes-adapt-paths-for-non-AOSPA-roms.patch | git am
 cd ../../../..
 
 rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp  vendor/qcom/opensource/core-utils/fwk-detect/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
