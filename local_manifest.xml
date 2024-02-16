@@ -33,5 +33,5 @@
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" />
     <project revision="uvite-sm6225" remote="lab" name="ThankYouMario/proprietary_vendor_xiaomi_camera.git" path="vendor/xiaomi/camera" />
     <project revision="uvite" remote="hub" name="AOSPA/android_device_xiaomi_sm6225-common-miuicamera.git" path="device/xiaomi/sm6225-common-miuicamera" />
-    <project path="hardware/xiaomi" remote="hub" name="AOSPA/android_hardware_xiaomi" revision="uvite"/>
+    <project path="hardware/xiaomi" remote="hub" name="PixelOS-AOSP/hardware_xiaomi" revision="fourteen"/>
 </manifest>
