@@ -47,7 +47,7 @@ curl -s https://github.com/PixelExperience/vendor_qcom_opensource_interfaces/com
 cd ../../../..
 
 
-rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
+rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp vendor/qcom/opensource/core-utils/fwk-detect/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
 
 # These patches are only needed when building unofficial. This requires you to add a valid pif fingerprint in overlay/rro_overlay/CertifiedPropsOverlay
 cd vendor/aosp
