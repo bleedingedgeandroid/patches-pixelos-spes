@@ -22,7 +22,7 @@
     <project revision="uvite-865" remote="hub" name="TheMatheusDev/hardware_qcom-caf_bengal_media.git" path="hardware/qcom-caf/bengal/media" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sm6225-common.git" path="device/xiaomi/sm6225-common" />
     <project revision="main" remote="hub" name="muralivijay/kernel_xiaomi_sm6225.git" path="kernel/xiaomi/sm6225" />
-    <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_spes-chris.git" path="device/xiaomi/spes" />
+    <project revision="fourteen-hentaios" remote="hub" name="bleedingedgeandroid/device_xiaomi_spes-chris.git" path="device/xiaomi/spes" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_spes.git" path="vendor/xiaomi/spes" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_sm6225-common.git" path="vendor/xiaomi/sm6225-common" />
     <project revision="uvite" remote="hub" name="TheMatheusDev/external_wpa_supplicant_8" path="external/wpa_supplicant_8" />
