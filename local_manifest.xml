@@ -4,8 +4,7 @@
 
   <remote name="pe-lab" fetch="https://gitlab.pixelexperience.org/" ></remote>
 
-    <remove-project name="LineageOS/android_external_wpa_supplicant_8"/>
-    <remove-project name="LineageOS/android_vendor_qcom_opensource_usb"/>
+    <remove-project name="platform/external/wpa_supplicant_8"/>
     <remove-project name="platform/hardware/st/nfc"/>
 
     <remove-project name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" />
