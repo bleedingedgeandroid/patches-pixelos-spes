@@ -21,7 +21,7 @@
     <project revision="uvite-legacy-component" remote="hub" name="TheMatheusDev/hardware_qcom-caf_bengal_gps.git" path="hardware/qcom-caf/bengal/gps" />
     <project revision="uvite-865" remote="hub" name="TheMatheusDev/hardware_qcom-caf_bengal_media.git" path="hardware/qcom-caf/bengal/media" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_sm6225-common.git" path="device/xiaomi/sm6225-common" />
-    <project revision="android-14" remote="hub" name="muralivijay/kernel_xiaomi_sm6225.git" path="kernel/xiaomi/sm6225" />
+    <project revision="main" remote="hub" name="muralivijay/kernel_xiaomi_sm6225.git" path="kernel/xiaomi/sm6225" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/device_xiaomi_spes-chris.git" path="device/xiaomi/spes" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_spes.git" path="vendor/xiaomi/spes" />
     <project revision="fourteen-pixelos" remote="hub" name="bleedingedgeandroid/vendor_xiaomi_sm6225-common.git" path="vendor/xiaomi/sm6225-common" />
