@@ -13,14 +13,17 @@ cd ../../..
 
 cd vendor/qcom/opensource/interfaces
 # Introduce FM HAL
-curl -s https://github.com/PixelExperience/vendor_qcom_opensource_interfaces/commit/0a1e8499b11c9c80a58510faa7f63e2d85ab831d.patch | git am
+curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/vendor/qcom/opensource/interfaces/0001-interfaces-Introduce-the-QTI-FM-HAL.patch | git am
 cd ../../../..
 
+cd external/wpa_supplicant_8
+curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/external/wpa_supplicant_8/0001-Convert-wpa_supplicant-to-soong-for-cuttlefish.patch | git am
+cd ../..
 
 rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp vendor/qcom/opensource/core-utils/fwk-detect/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
 
 # These patches are only needed when building unofficial. This requires you to add a valid pif fingerprint in overlay/rro_overlay/CertifiedPropsOverlay
 cd vendor/aosp
-git revert cba30d055a5dffdf57217c5f59ada565a78edd18
+#git revert cba30d055a5dffdf57217c5f59ada565a78edd18 this commit changes every time
 cd ../..
 ```
