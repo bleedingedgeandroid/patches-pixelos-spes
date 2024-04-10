@@ -11,6 +11,11 @@ cd hardware/qcom-caf/common
 curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/hardware/qcom-caf/common/0001-Split-bengal-and-kona-SoC-families.patch -s | git am
 cd ../../..
 
+cd hardware/qcom-caf/bengal/gps
+# Split bengal and kona SOC families
+curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/hardware/qcom-caf/bengal/gps/0001-bengal-comment-out-unused-header.patch -s | git am
+cd ../../../..
+
 cd vendor/qcom/opensource/interfaces
 # Introduce FM HAL
 curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/vendor/qcom/opensource/interfaces/0001-interfaces-Introduce-the-QTI-FM-HAL.patch | git am

@@ -1,0 +1,25 @@
+From dad9ddd63c2ee24a4e0f5f033b964b8f35980261 Mon Sep 17 00:00:00 2001
+From: PugzAreCute <me@pugzarecute.com>
+Date: Wed, 10 Apr 2024 20:07:06 +0530
+Subject: [PATCH] bengal: comment out unused header
+
+---
+ pla/android/loc_pla.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pla/android/loc_pla.h b/pla/android/loc_pla.h
+index 34cb591..767cd93 100644
+--- a/pla/android/loc_pla.h
++++ b/pla/android/loc_pla.h
+@@ -40,7 +40,7 @@ extern "C" {
+ #endif
+ 
+ #include <cutils/properties.h>
+-#include <cutils/threads.h>
++//include <cutils/threads.h>
+ #include <cutils/sched_policy.h>
+ #include <cutils/android_filesystem_config.h>
+ #include <string.h>
+-- 
+2.44.0
+
