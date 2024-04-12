@@ -25,6 +25,10 @@ cd external/wpa_supplicant_8
 curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/external/wpa_supplicant_8/0001-Convert-wpa_supplicant-to-soong-for-cuttlefish.patch | git am
 cd ../..
 
+cd vendor/qcom/common/system/gps
+curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/vendor/qcom/common/system/gps/0001-gps-nuke-com.qualcomm.location.patch | git am
+cd ../../../../..
+
 rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp vendor/qcom/opensource/core-utils/fwk-detect/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
 
 # These patches are only needed when building unofficial. This requires you to add a valid pif fingerprint in overlay/rro_overlay/CertifiedPropsOverlay
