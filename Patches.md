@@ -26,7 +26,7 @@ curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-sp
 cd ../..
 
 cd vendor/qcom/common/system/gps
-curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/vendor/qcom/common/system/gps/0001-gps-nuke-com.qualcomm.location.patch | git am
+curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/vendor/qcom/common/system/gps/0001-gps-drop-com.qualcomm.location.patch | git am
 cd ../../../../..
 
 rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp vendor/qcom/opensource/core-utils/fwk-detect/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
