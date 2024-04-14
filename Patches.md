@@ -31,8 +31,11 @@ cd ../../../../..
 
 rm -rf vendor/qcom/opensource/commonsys/fm device/qcom/vendor-common/memtrack/Android.bp vendor/qcom/opensource/core-utils/fwk-detect/Android.bp # We already have another thing providing these(fm from device/qcom/vendor-common/commonsys/fm)
 
-# These patches are only needed when building unofficial. This requires you to add a valid pif fingerprint in overlay/rro_overlay/CertifiedPropsOverlay
 cd vendor/aosp
+# Build ParanoidSense
+git revert d7c9e37
+
+# These patches are only needed when building unofficial. This requires you to add a valid pif fingerprint in overlay/rro_overlay/CertifiedPropsOverlay
 git revert cba30d055a5dffdf57217c5f59ada565a78edd18 #this commit changes every time
 cd ../..
 ```
