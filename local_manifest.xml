@@ -2,7 +2,7 @@
   <remote name="hub" fetch="https://github.com/" ></remote>
   <remote name="lab" fetch="https://gitlab.com/" ></remote>
 
-  <remote name="pe-lab" fetch="https://gitlab.pixelexperience.org/" ></remote>
+  <remote name="pe-lab" fetch="https://github.com/PixelExperience-Blobs/" ></remote>
 
     <remove-project name="LineageOS/android_external_wpa_supplicant_8"/>
     <remove-project name="LineageOS/android_vendor_qcom_opensource_usb"/>
