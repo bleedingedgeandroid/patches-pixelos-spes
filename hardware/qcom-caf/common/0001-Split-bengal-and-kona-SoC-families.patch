@@ -1,8 +1,9 @@
-From 18c03849b36652954727d8f00d4ae3ba93ffbe4f Mon Sep 17 00:00:00 2001
+From 41dc8480817ca1d4bf6a3e78565e64631ff3b67e Mon Sep 17 00:00:00 2001
 From: PugzAreCute <me@pugzarecute.com>
-Date: Tue, 16 Jan 2024 18:39:40 +0530
+Date: Sun, 12 May 2024 09:55:31 +0530
 Subject: [PATCH] Split bengal and kona  SoC families
 
+Change-Id: Ica4b0668ee03d67e08c72e93bdc67af4a1f1d3db
 ---
  BoardConfigQcom.mk         | 22 ++++++++++++++--------
  os_pickup_sepolicy_vndr.mk |  2 +-
@@ -95,7 +96,7 @@ index 3d9c465..2de1194 100644
  else ifneq ($(filter $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
      include device/qcom/sepolicy_vndr/sm8450/SEPolicy.mk
 diff --git a/qcom_defs.mk b/qcom_defs.mk
-index 3df2ac4..7dcacea 100644
+index dbb542f..a40bae4 100644
 --- a/qcom_defs.mk
 +++ b/qcom_defs.mk
 @@ -7,7 +7,8 @@ UM_3_18_FAMILY := msm8996 msm8937 msm8953
@@ -107,7 +108,7 @@ index 3df2ac4..7dcacea 100644
 +UM_4_19_BENGAL_FAMILY := bengal
  UM_5_4_FAMILY := lahaina holi
  UM_5_10_FAMILY := taro parrot
- UM_5_15_FAMILY := kalama
+ UM_5_15_FAMILY := kalama crow
 -- 
-2.43.0
+2.45.0
 
