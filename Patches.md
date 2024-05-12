@@ -12,7 +12,7 @@ curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-sp
 cd ../../..
 
 cd hardware/qcom-caf/bengal/gps
-# Split bengal and kona SOC families
+# Drop com.qualcomm.location, causes logcat spam asking for hal versions 4.1 and 4.2, which we dont have.
 curl -s https://raw.githubusercontent.com/bleedingedgeandroid/patches-pixelos-spes/fourteen-pixelos/hardware/qcom-caf/bengal/gps/0001-bengal-comment-out-unused-header.patch -s | git am
 cd ../../../..
 
