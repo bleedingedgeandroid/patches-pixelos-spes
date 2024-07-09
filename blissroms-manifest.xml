@@ -1,0 +1,8 @@
+<manifest>
+    <remote name="hub" fetch="https://github.com/" ></remote>
+    <remote name="lab" fetch="https://gitlab.com/" ></remote>
+    <project revision="main" remote="hub" name="muralivijay/kernel_xiaomi_sm6225.git" path="kernel/xiaomi/sm6225" />
+    <project revision="fourteen-blissroms" remote="hub" name="bleedingedgeandroid/device_xiaomi_spes-gallium.git" path="device/xiaomi/spes" />
+    <project revision="14.0" remote="hub" name="crdroidandroid/android_vendor_xiaomi_spes.git" path="vendor/xiaomi/spes" />
+    <project path="hardware/xiaomi" remote="hub" name="BlissRoms-Devices/android_hardware_xiaomi" revision="universe"/>
+</manifest>
