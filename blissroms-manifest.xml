@@ -5,4 +5,5 @@
     <project revision="fourteen-blissroms" remote="hub" name="bleedingedgeandroid/device_xiaomi_spes-gallium.git" path="device/xiaomi/spes" />
     <project revision="14.0" remote="hub" name="crdroidandroid/android_vendor_xiaomi_spes.git" path="vendor/xiaomi/spes" />
     <project path="hardware/xiaomi" remote="hub" name="BlissRoms-Devices/android_hardware_xiaomi" revision="universe"/>
+    <project path="vendor/microg" name="BlissLabs/BlissRoms/platform_vendor_microg" remote="lab" revision="universe" />
 </manifest>
